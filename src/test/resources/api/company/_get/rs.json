@@ -1,0 +1,13 @@
+{
+  "id": "type:Integer",
+"name": "ABC Corporation",
+"address": "123 Main St",
+"zip": "12345",
+"country": "USA",
+"employeeCount": "type:Integer",
+"industry": "Technology",
+"marketCap": 1000000000,
+"domain": "abccorp.com",
+"logo": "https://example.com/logo1.png",
+"ceoName": "type:String"
+}

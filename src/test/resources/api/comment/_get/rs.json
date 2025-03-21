@@ -1,0 +1,7 @@
+{
+  "postId": 1,
+  "id": "type:String",
+  "name": "John Smith",
+  "email": "john.smith@example.com",
+  "body": "Great blog post! I learned a lot from it."
+}

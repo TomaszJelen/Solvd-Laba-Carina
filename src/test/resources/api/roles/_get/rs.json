@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Admin",
+    "description": "Full access to all features and functionalities."
+  },
+  {
+    "id": 2,
+    "name": "Manager",
+    "description": "Access to management and reporting features."
+  },
+  {
+    "id": 3,
+    "name": "User",
+    "description": "Basic user role with standard permissions."
+  },
+  {
+    "id": 4,
+    "name": "Moderator",
+    "description": "Responsible for content moderation and approval."
+  },
+  {
+    "id": 5,
+    "name": "Support",
+    "description": "Provides customer support and assistance."
+  }
+]

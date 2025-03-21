@@ -1,0 +1,5 @@
+{
+  "id": "type:Integer",
+"name": "User",
+"description": "Basic user role with standard permissions."
+}

@@ -1,0 +1,13 @@
+{
+  "id": "type:Integer",
+"name": "Emily Johnson",
+"company": "ABC Corporation",
+"username": "emily_johnson",
+"email": "emily.johnson@abccorporation.com",
+"address": "123 Main St",
+"zip": "12345",
+"state": "California",
+"country": "USA",
+"phone": "+1-555-123-4567",
+"photo": "https://cdn.pixabay.com/photo/2012/04/13/21/07/user-33638_1280.png"
+}
