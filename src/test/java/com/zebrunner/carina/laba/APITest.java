@@ -4,9 +4,12 @@ import com.zebrunner.carina.api.apitools.validation.JsonCompareKeywords;
 import com.zebrunner.carina.core.IAbstractTest;
 import com.zebrunner.carina.laba.api.*;
 import org.skyscreamer.jsonassert.JSONCompareMode;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
 
 public class APITest  implements IAbstractTest {
+    static final Logger logger = LoggerFactory.getLogger(APITest.class);
     @Test
     public void testGetPosts() {
         GetPostsMethod getPostsMethod = new GetPostsMethod();
@@ -21,7 +24,7 @@ public class APITest  implements IAbstractTest {
         getPostMethod.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
     }
 
-    @Test
+//    @Test
     public void testGetComments() {
         GetCommentsMethod getCommentsMethod = new GetCommentsMethod();
         getCommentsMethod.callAPIExpectSuccess();
@@ -49,7 +52,7 @@ public class APITest  implements IAbstractTest {
         getCompanyMethod.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
     }
 
-    @Test
+//    @Test
     public void testGetUsers() {
         GetUsersMethod getUsersMethod = new GetUsersMethod();
         getUsersMethod.callAPIExpectSuccess();

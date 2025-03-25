@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MyTestSuite">
+    <test name="Test1" parallel="methods">
+        <classes>
+            <class name="com.zebrunner.carina.laba.gui.FooterTest"/>
+            <class name="com.zebrunner.carina.laba.gui.HeaderTest"/>
+            <class name="com.zebrunner.carina.laba.gui.LoginTest"/>
+        </classes>
+    </test>
+</suite>
