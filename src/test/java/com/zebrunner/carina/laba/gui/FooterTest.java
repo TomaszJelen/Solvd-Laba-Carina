@@ -2,16 +2,16 @@ package com.zebrunner.carina.laba.gui;
 
 import com.zebrunner.carina.core.IAbstractTest;
 import org.openqa.selenium.WebDriver;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class FooterTest implements IAbstractTest {
+public class FooterTest extends BaseTest {
+    static final Logger logger = LoggerFactory.getLogger(FooterTest.class);
     @Test
     public void aboutOptionTest() {
-        WebDriver driver = getDriver();
-        HomePageBase startingHomePage = initPage(driver, HomePageBase.class);
-        startingHomePage.open();
-
         AboutPageBase aboutPage = startingHomePage.getFooter().clickAboutOption();
         Assert.assertEquals(driver.getCurrentUrl(), "https://parabank.parasoft.com/parabank/about.htm", "Wrong url");
         Assert.assertEquals(aboutPage.getTitleText(), "ParaSoft Demo Website", "Wrong title");
@@ -19,10 +19,6 @@ public class FooterTest implements IAbstractTest {
 
     @Test
     public void servicesOptionTest() {
-        WebDriver driver = getDriver();
-        HomePageBase startingHomePage = initPage(driver, HomePageBase.class);
-        startingHomePage.open();
-
         ServicePageBase servicePage = startingHomePage.getFooter().clickServicesOption();
         Assert.assertEquals(driver.getCurrentUrl(), "https://parabank.parasoft.com/parabank/services.htm", "Wrong url");
         Assert.assertEquals(servicePage.getHeadersNumber(), 5, "Wrong number of service headers");
@@ -30,10 +26,6 @@ public class FooterTest implements IAbstractTest {
 
     @Test
     public void homeOptionTest() {
-        WebDriver driver = getDriver();
-        HomePageBase startingHomePage = initPage(driver, HomePageBase.class);
-        startingHomePage.open();
-
         AboutPageBase aboutPage = startingHomePage.getFooter().clickAboutOption();
         HomePageBase homePage = aboutPage.getFooter().clickHomeOption();
         Assert.assertEquals(driver.getCurrentUrl(), "https://parabank.parasoft.com/parabank/index.htm", "Wrong url");

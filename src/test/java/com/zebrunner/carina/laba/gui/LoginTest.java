@@ -9,15 +9,11 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class LoginTest implements IAbstractTest {
+public class LoginTest extends BaseTest {
     static final Logger logger = LoggerFactory.getLogger(LoginTest.class);
 
     @Test
     public void noDataLoginTest() {
-        WebDriver driver = getDriver();
-        HomePageBase startingHomePage = initPage(driver, HomePageBase.class);
-        startingHomePage.open();
-
         ErrorPageBase errorPage = startingHomePage.getSidePanel().clickLogin();
         Assert.assertEquals(driver.getCurrentUrl(), "https://parabank.parasoft.com/parabank/login.htm", "Wrong url");
         Assert.assertEquals(errorPage.getErrorText(), "Please enter a username and password.", "Wrong error message");
@@ -25,10 +21,6 @@ public class LoginTest implements IAbstractTest {
 
     @Test
     public void noPasswordLoginTest() {
-        WebDriver driver = getDriver();
-        HomePageBase startingHomePage = initPage(driver, HomePageBase.class);
-        startingHomePage.open();
-
         startingHomePage.getSidePanel().fillUser("Error");
         ErrorPageBase errorPage = startingHomePage.getSidePanel().clickLogin();
         Assert.assertEquals(driver.getCurrentUrl(), "https://parabank.parasoft.com/parabank/login.htm", "Wrong url");
@@ -37,10 +29,6 @@ public class LoginTest implements IAbstractTest {
 
     @Test
     public void wrongDataLoginTest() {
-        WebDriver driver = getDriver();
-        HomePageBase startingHomePage = initPage(driver, HomePageBase.class);
-        startingHomePage.open();
-
         startingHomePage.getSidePanel().fillUser("Error");
         startingHomePage.getSidePanel().fillPassword("Error");
         ErrorPageBase errorPage = startingHomePage.getSidePanel().clickLogin();
