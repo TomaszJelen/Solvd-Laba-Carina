@@ -1,8 +1,8 @@
 package com.zebrunner.carina.laba.gui.components;
 
-import com.zebrunner.carina.laba.gui.AboutPageBase;
-import com.zebrunner.carina.laba.gui.HomePageBase;
-import com.zebrunner.carina.laba.gui.ServicePageBase;
+import com.zebrunner.carina.laba.gui.common.AboutPageBase;
+import com.zebrunner.carina.laba.gui.common.HomePageBase;
+import com.zebrunner.carina.laba.gui.common.ServicePageBase;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.gui.AbstractUIObject;
 import org.openqa.selenium.SearchContext;

@@ -1,4 +1,4 @@
-package com.zebrunner.carina.laba.gui;
+package com.zebrunner.carina.laba.gui.common;
 
 import org.openqa.selenium.WebDriver;
 

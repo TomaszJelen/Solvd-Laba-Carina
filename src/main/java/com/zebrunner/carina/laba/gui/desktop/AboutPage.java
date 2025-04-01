@@ -1,6 +1,6 @@
 package com.zebrunner.carina.laba.gui.desktop;
 
-import com.zebrunner.carina.laba.gui.AboutPageBase;
+import com.zebrunner.carina.laba.gui.common.AboutPageBase;
 import com.zebrunner.carina.utils.factory.DeviceType;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import org.openqa.selenium.WebDriver;
@@ -15,7 +15,7 @@ public class AboutPage extends AboutPageBase {
         super(driver);
     }
 
-    @Override
+//    @Override
     public String getTitleText() {
         return title.getText();
     }

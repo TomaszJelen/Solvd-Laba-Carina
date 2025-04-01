@@ -1,8 +1,8 @@
 package com.zebrunner.carina.laba.gui;
 
-import com.zebrunner.carina.core.IAbstractTest;
-import com.zebrunner.carina.laba.APITest;
-import org.openqa.selenium.WebDriver;
+import com.zebrunner.carina.laba.gui.common.AboutPageBase;
+import com.zebrunner.carina.laba.gui.common.HomePageBase;
+import com.zebrunner.carina.laba.gui.common.ServicePageBase;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;

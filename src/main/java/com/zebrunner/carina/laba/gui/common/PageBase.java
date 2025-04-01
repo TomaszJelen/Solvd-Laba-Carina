@@ -1,4 +1,4 @@
-package com.zebrunner.carina.laba.gui;
+package com.zebrunner.carina.laba.gui.common;
 
 import com.zebrunner.carina.laba.gui.components.Footer;
 import com.zebrunner.carina.laba.gui.components.Header;
@@ -33,4 +33,10 @@ public abstract class PageBase extends AbstractPage {
     public Footer getFooter() {
         return footer;
     }
+
+//    public abstract Header getHeader();
+//
+//    public abstract SidePanel getSidePanel();
+//
+//    public abstract Footer getFooter();
 }

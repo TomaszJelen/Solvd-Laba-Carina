@@ -1,6 +1,6 @@
 package com.zebrunner.carina.laba.gui.desktop;
 
-import com.zebrunner.carina.laba.gui.HomePageBase;
+import com.zebrunner.carina.laba.gui.common.HomePageBase;
 import com.zebrunner.carina.utils.factory.DeviceType;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import org.openqa.selenium.WebDriver;
@@ -15,7 +15,7 @@ public class HomePage extends HomePageBase {
         super(driver);
     }
 
-    @Override
+//    @Override
     public String getsampleDataText() {
         return sampleData.getText();
     }

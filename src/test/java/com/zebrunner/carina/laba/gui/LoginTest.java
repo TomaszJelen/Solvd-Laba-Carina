@@ -1,8 +1,7 @@
 package com.zebrunner.carina.laba.gui;
 
+import com.zebrunner.carina.laba.gui.common.ErrorPageBase;
 import com.zebrunner.carina.utils.R;
-import com.zebrunner.carina.webdriver.core.capability.impl.desktop.FirefoxCapabilities;
-import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;

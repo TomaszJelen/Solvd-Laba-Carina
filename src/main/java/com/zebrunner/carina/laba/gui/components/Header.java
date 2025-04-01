@@ -1,8 +1,9 @@
 package com.zebrunner.carina.laba.gui.components;
 
-import com.zebrunner.carina.laba.gui.AboutPageBase;
-import com.zebrunner.carina.laba.gui.HomePageBase;
-import com.zebrunner.carina.laba.gui.ServicePageBase;
+import com.zebrunner.carina.laba.gui.common.AboutPageBase;
+import com.zebrunner.carina.laba.gui.common.AdminPageBase;
+import com.zebrunner.carina.laba.gui.common.HomePageBase;
+import com.zebrunner.carina.laba.gui.common.ServicePageBase;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.gui.AbstractUIObject;
 import org.openqa.selenium.SearchContext;
@@ -16,6 +17,9 @@ public class Header extends AbstractUIObject {
 
     @FindBy(xpath = ".//a[text()='Services']")
     protected ExtendedWebElement servicesOption;
+
+    @FindBy(xpath = ".//a[text()='Admin Page']")
+    protected ExtendedWebElement adminOption;
 
     @FindBy(css = "li[class='home']")
     protected ExtendedWebElement homeButton;
@@ -35,6 +39,11 @@ public class Header extends AbstractUIObject {
     public ServicePageBase clickServicesOption() {
         servicesOption.click();
         return initPage(driver, ServicePageBase.class);
+    }
+
+    public AdminPageBase clickAdminOption() {
+        adminOption.click();
+        return initPage(driver, AdminPageBase.class);
     }
 
     public HomePageBase clickHome() {

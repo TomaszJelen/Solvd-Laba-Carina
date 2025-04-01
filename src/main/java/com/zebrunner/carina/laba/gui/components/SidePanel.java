@@ -1,6 +1,6 @@
 package com.zebrunner.carina.laba.gui.components;
 
-import com.zebrunner.carina.laba.gui.ErrorPageBase;
+import com.zebrunner.carina.laba.gui.common.ErrorPageBase;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.gui.AbstractUIObject;
 import org.openqa.selenium.SearchContext;

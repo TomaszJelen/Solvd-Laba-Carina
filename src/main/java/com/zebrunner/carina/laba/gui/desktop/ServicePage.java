@@ -1,6 +1,6 @@
 package com.zebrunner.carina.laba.gui.desktop;
 
-import com.zebrunner.carina.laba.gui.ServicePageBase;
+import com.zebrunner.carina.laba.gui.common.ServicePageBase;
 import com.zebrunner.carina.utils.factory.DeviceType;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import org.openqa.selenium.WebDriver;
@@ -17,7 +17,7 @@ public class ServicePage extends ServicePageBase {
         super(driver);
     }
 
-    @Override
+//    @Override
     public int getHeadersNumber() {
         return serviceHeaders.size();
     }
